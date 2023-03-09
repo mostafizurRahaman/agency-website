@@ -1,0 +1,17 @@
+
+
+svg.radial-progress circle {
+  fill: rgba(0,0,0,0);
+  stroke: #fff;
+  stroke-dashoffset: 219.91148575129; 
+  stroke-width: 3;
+}
+
+
+
+
+
+svg.radial-progress text {
+  fill: #fff;
+  text-anchor: middle;
+}

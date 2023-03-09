@@ -1,0 +1,282 @@
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body {}
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    html {
+        font-size: 50.5%;
+    }
+
+    /*HEADER SECTION*/
+    .header {
+       
+    }
+
+    .header .hero-arrow {
+        width: 7rem;
+    }
+
+
+
+    .description-of-porftfolio h3 {
+        margin-top: -2.7rem;
+    }
+
+
+    .portfolio-section .portfolio-bottom1 {
+        display: none;
+    }
+
+    .team .box {
+        margin-top: 3rem;
+        width: 100%;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .footer .top-btn a img {
+        width: 6rem;
+    }
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+
+    html {
+        font-size: 40%;
+    }
+
+    .header {
+        height: 75vh;
+    }
+
+    .header-caption .hero-text {
+        font-size: 5rem;
+    }
+
+    .header .hero-arrow {
+        width: 6rem;
+    }
+
+
+    .col-3 {
+        -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 50% !important;
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+
+    }
+
+    .services-section-bottom .col-2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        margin: 1.5rem 0;
+    }
+
+    .portfolio-section .portfolio-category li a {
+        font-size: 1.4rem;
+    }
+
+    .portfolio-section .extra-portfolio-description .little-description {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .portfolio-section .extra-portfolio-description .col-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .portfolio-section .portfolio-bottom1 {
+        display: none;
+    }
+
+    .portfolio-countdowner .countdowner .col-3 {
+        -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 47% !important;
+        flex: 0 0 47% !important;
+        max-width: 48% !important;
+    }
+
+    .portfolio-countdowner .countdowner .box {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-us .about-bottom {
+        text-align: center;
+    }
+
+    .about-us .about-bottom .about-us-icon {
+        float: none;
+        width: 100%;
+    }
+
+    .about-us .about-bottom .about-us-description {
+        width: 100%;
+    }
+
+    .about-us .about-bottom .about-us-description h4 {
+        margin-top: 1.5rem;
+    }
+
+    .form-fill-up form {
+        margin-top: 2rem;
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    .form-fill-up .col-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+
+    }
+
+    .form-fill-up input[type="text"],
+    .form-fill-up input[type="email"] {
+        margin: 1rem 0;
+
+    }
+
+    .footer .top-btn a img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 29%);
+        width: 6rem;
+    }
+}
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    html {
+        font-size: 45%
+    }
+
+    .header {
+        height: 75vh;
+    }
+
+    .header .hero-arrow{
+        width: 6rem;
+    }
+
+    .portfolio-section .portfolio-bottom1 {
+        display: none;
+    }
+
+    .col-3 {
+        -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 50% !important;
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+
+    }
+
+    .services-section-bottom .col-2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        margin: 1.5rem 0;
+    }
+
+    .portfolio-section .extra-portfolio-description .col-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+
+    }
+
+    .portfolio-countdowner .countdowner .box {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-us .about-bottom {
+        text-align: center;
+    }
+
+    .about-us .about-bottom .about-us-icon {
+        float: none;
+        width: 100%;
+    }
+
+    .about-us .about-bottom .about-us-description {
+        width: 100%;
+    }
+
+    .about-us .about-bottom .about-us-description h4 {
+        margin-top: 1.5rem;
+    }
+
+    .form-fill-up .col-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+
+    }
+
+    .footer .top-btn a img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 29%);
+        width: 6rem;
+    }
+
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {}
